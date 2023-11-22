@@ -1,1 +1,2 @@
 # HengerProgram
+## Péti Dominik
