@@ -2,6 +2,7 @@
 package hengerprogram;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class HengerProgram {
@@ -26,7 +27,7 @@ public class HengerProgram {
         String szoveg = "A program futása közben létrejött hengerek száma: %d\n" + 
                         "A hengerek átlag térfogata: %.2f\n" + 
                         "A csövek összsúlya: %.2f\n";
-       szoveg = szoveg.formatted(this.lista().size(), this.atlagTerfogat(), this.csovekSulya());
+       szoveg = szoveg.formatted(Henger.getHengerDarab(), this.atlagTerfogat(), this.csovekSulya());
         System.out.println(szoveg);
     }
     
@@ -54,19 +55,12 @@ public class HengerProgram {
     
     private List<Henger> lista() {
         List<Henger> hengerek = new ArrayList<Henger>();
-        hengerek.add(new Henger(2.0, 1.5));
-        hengerek.add(new Henger(3, 2));
-        hengerek.add(new TomorHenger(2.0, 1.5));
-        hengerek.add(new TomorHenger(2.0, 1, 2));
-        hengerek.add(new TomorHenger(5.0, 2, 3));
-        hengerek.add(new TomorHenger(4.0, 1));
-        hengerek.add(new Cso(2.0, 2.5, 0.5));
-        hengerek.add(new Cso(2.5, 1.5, 1.5));
-        hengerek.add(new Cso(1.5, 3, 1, 2));
-        hengerek.add(new Cso(2.5, 4, 0.2, 3));
-        hengerek.add(new Cso(1.0, 2, 0.3));
+        hengerek.add(new Henger(1, 1));
+        hengerek.add(new TomorHenger(1, 1));
+        hengerek.add(new Cso(1, 1, 0.5));
+        hengerek.add(new Cso(1, 1, 0.1));
         
-        return hengerek;
+        return Collections.unmodifiableList(hengerek);
     }
     
 }

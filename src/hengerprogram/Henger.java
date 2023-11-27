@@ -6,8 +6,13 @@ public class Henger {
     private double sugar, magassag;
     
     public Henger(double sugar, double magassag) {
+        hengerDarab++;
         this.sugar =  sugar;
         this.magassag = magassag;
+    }
+    
+    protected static void decreaseHengerDarab() {
+        hengerDarab--;
     }
 
     public static int getHengerDarab() {
