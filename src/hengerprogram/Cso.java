@@ -30,7 +30,7 @@ public class Cso extends TomorHenger {
     @Override
     public String toString() {
         String s = super.toString();
-        return s + "\n\tCso{" + "falVastagsag=" + falVastagsag + '}';
+        return s + "\n\t\tCso{" + "falVastagsag=" + falVastagsag + '}';
     }
     
     

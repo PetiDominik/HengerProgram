@@ -17,6 +17,7 @@ public class HengerProgram {
     }
     
     public void run() {
+        System.out.println("A programban szereplő hengerek adatai:");
         for (Henger henger : this.hengerek) {
             System.out.println(henger);
         }
