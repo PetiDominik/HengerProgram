@@ -20,9 +20,13 @@ public class Cso extends TomorHenger {
 
     @Override
     public double terfogat() {
-        return 1.0;
-    }
-
+        double sugar = this.getSugar();
+        double belsoAtmero = sugar - this.falVastagsag;
+        double magassag = this.getMagassag();
+        
+        return ((Math.PI * (sugar * sugar)) * this.getMagassag()) - ((Math.PI * (belsoAtmero * belsoAtmero)) * magassag);
+    }  
+    
     @Override
     public String toString() {
         String s = super.toString();

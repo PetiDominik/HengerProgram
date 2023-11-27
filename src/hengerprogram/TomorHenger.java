@@ -18,7 +18,7 @@ public class TomorHenger extends Henger {
     }
     
     public double suly() {
-        return 0.0;
+        return this.terfogat() * this.fajSuly;
     }
 
     @Override
