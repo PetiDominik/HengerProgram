@@ -23,7 +23,7 @@ public class Henger {
     }
     
     public double terfogat() {
-        return 0.0;
+        return (Math.PI * (this.sugar * this.sugar)) * this.magassag;
     }
 
     @Override
