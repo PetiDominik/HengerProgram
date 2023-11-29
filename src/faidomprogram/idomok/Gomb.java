@@ -22,6 +22,6 @@ public class Gomb extends FaIdom{
 
     @Override
     public String toString() {
-        return super.toString() + System.lineSeparator() + "\tGomb{" + "sugar=" + sugar + '}';
+        return super.toString() + "<---Gomb{" + "sugar=" + sugar + '}';
     }
 }

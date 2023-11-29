@@ -40,7 +40,7 @@ public class Hasab extends FaIdom{
 
     @Override
     public String toString() {
-        return super.toString() + System.lineSeparator() + "\tHasab{" + "a=" + a + ", b=" + b + ", magassag=" + magassag + '}';
+        return super.toString() + "<---Hasab{" + "a=" + a + ", b=" + b + ", magassag=" + magassag + '}';
     }
     
     

@@ -36,8 +36,10 @@ public class Faidomok {
         
         System.out.printf("Gömbök összsúlya: %.2f\n", this.osszGombSuly());
         
-        System.out.printf("Legkisebb FaIdom: %s\n", this.minV());
-        System.out.printf("Legnagyobb FaIdom: %s\n", this.maxV());
+        FaIdom min = this.minV();
+        FaIdom max = this.maxV();
+        System.out.printf("Legkisebb FaIdom: %s, típusa: %s\n", min, min.getClass().getSimpleName());
+        System.out.printf("Legnagyobb FaIdom: %s, típusa: %s\n", max, max.getClass().getSimpleName());
     }
     
     public double OsszSuly() {
